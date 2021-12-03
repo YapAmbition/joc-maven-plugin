@@ -10,7 +10,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 /**
  * @author shenzhencheng on 2021/12/2
  */
-@Mojo(name = "parse", defaultPhase = LifecyclePhase.PACKAGE)
+@Mojo(name = "parse", defaultPhase = LifecyclePhase.COMPILE)
 public class Joc extends AbstractMojo {
 
     /** 扫描路径 **/
@@ -21,8 +21,27 @@ public class Joc extends AbstractMojo {
     @Parameter(property = "exclude-files")
     private String excludeFiles;
 
+    /**
+     * 执行任务
+     *
+     * @throws MojoExecutionException 第一个异常
+     * @throws MojoFailureException 第二个异常
+     */
     public void execute() throws MojoExecutionException, MojoFailureException {
 
+    }
+
+    /**
+     * asdaffff
+     *
+     * mock handle
+     * ddfdsdasdasd
+     * greeeee
+     * @param a 这是参数a
+     * @return 执行结果
+     */
+    public String handle(String a) {
+        return null ;
     }
 
 }
